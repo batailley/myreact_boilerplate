@@ -15,7 +15,6 @@ var watchify = require('watchify'); // Watchify for source changes
 var merge = require('utils-merge'); // Object merge tool
 var duration = require('gulp-duration'); // Time aspects of your gulp process
 
-var run = require('gulp-run');
 
 // Configuration for Gulp
 var config = {
@@ -78,10 +77,4 @@ gulp.task('default', function() {
     bundler.on('update', function() {
         bundle(bundler); // Re-run bundle on source updates
     });
-});
-
-
-gulp.task('install', function () {
-    run('npm install').exec()  // prints "Hello World\n".
-        .pipe(gulp.dest('output'))    // Writes "Hello World\n" to output/echo.
 });
