@@ -1,5 +1,6 @@
-var buzz = function () {
-    console.log('app loaded');
+export  function buzz() {
+    console.log('new changes');
 };
-
-export { buzz };
+export  function bouzz() {
+    console.log('new bouzz another bouzz changes');
+};
