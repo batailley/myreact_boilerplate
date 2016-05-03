@@ -1,3 +1,5 @@
 export  function buzz() {
-    console.log('app loaded');
+    console.log('new changes');
 };
+
+export { buzz };
