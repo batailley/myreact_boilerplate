@@ -6,3 +6,8 @@ export function bizz() {
     "use strict";
     Object.noop();
 }
+
+export function cherryPick() {
+    "use strict";
+    Object.noop();
+}
